@@ -84,21 +84,21 @@ void setup() {
   display.drawBitmap(0, 0, image_HEX_array, 128, 64, 1);
   display.display();
 	delay(5000);
-	display.clear();
-	display.diaplay();
+	display.clearDisplay();
+	display.display();
   //____________________________________________________________________________________________________
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0,28);
-  display.println("Hello world!");
+  display.println("OPTIMUMP");
   display.display();
-  delay(2000);
+  delay(500);
   display.clearDisplay();
 
   // ___________________________________________________________________________________________________   
   display.setTextColor(BLACK, WHITE); // 'inverted' text
   display.setCursor(0,28);
-  display.println("Hello world!");
+  display.println("OPTIMUMP");
   display.display();
   delay(2000);
   display.clearDisplay();
@@ -113,6 +113,31 @@ void setup() {
 	float fillAngle = (percentage / 100.0) * 360.0;
   display.fillCircleHelper(x, y, radius, 0, fillAngle, BLACK);
 	display.display();
+	display.clearDisplay();
+	//_______________________________________________________________________________________________________
+	display.setTextSize(2);
+  display.setTextColor(WHITE);
+  display.setCursor(0,28);
+  display.println("OPTIMUMP");
+  display.display();
+  delay(500);
+  display.clearDisplay();
+	for(int i=0;i<56;i++){
+		display.setTextSize(1);
+		display.setCursor(0,i);
+  display.println("OPTIMUMP");
+  display.display();
+  delay(500);
+  display.clearDisplay();
+	}
+	for(int i=0;i<76;i++){
+		display.setTextSize(1);
+		display.setCursor(i,0);
+  display.println("OPTIMUMP");
+  display.display();
+  delay(500);
+  display.clearDisplay();
+	}
 }
 void loop() {
 }
